@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    gap: 40px;
+    padding: 0 120px;
+    position: fixed;
+    z-index: 999;
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+#nav h4 a{
+    text-decoration: none;
+
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+    position: fixed;
+}
+
+#nav #end{
+    justify-content: flex-end;
+}
+
+#main{
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.679); */
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+#page1 h1{
+    font-size: 100px;
+    position: relative;
+}
+
+#page1 h1::before{ /*psuedo elements*/
+    content: "Start. Pitch. Invest" ;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: -3px;
+    left: -3px;
+    z-index: -1;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+#page1 h2{
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#page1 p{
+    font-size: 20px;
+    font-weight: 300;
+    width: 48%;
+}
+
+button{
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    /* margin: 5px; */
+    padding: 4px 0;
+    border-radius: 2%;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(0, 255, 255, 0.464);
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button:hover{
+    background: rgba(0, 255, 255, 0.466);
+    color: black;
+}
+
+button:active{
+    background: cyan;
+    color: black;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+}
+
+marquee{
+    font-size: 120px;
+    font-weight: 900;
+}
+
+#about-us{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+} 
+
+#about-us img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+} 
+
+#aboutus{
+    width: 50%;
+    text-align: center;
+} 
+
+#aboutus h3{
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 30px;
+} 
+
+#aboutus p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#page3{
+    height: 125vh;
+    width: 100%;
+}
+
+#page3 h1{
+    font-size: 120px;
+    justify-content: center;
+    align-items: center;
+} 
+
+#Event-gallery{
+    padding: 30px;
+    padding-top: 100px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.img{
+    margin-top: 10px;
+    display: flex;
+    height: 72%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#img1{
+    background-image: url(images/blog-funding.jpg);
+}
+
+#img2{
+    background-image: url(images/download.jpg);
+}
+
+#img3{
+    background-image: url(images/photo-1589561253898-768105ca91a8.jpg);
+}
+
+#img4{
+    background-image: url(images/blog-funding.jpg);
+}
+
+#img5{
+    background-image: url(images/download.jpg);
+}
+
+#img6{
+    background-image: url(images/photo-1589561253898-768105ca91a8.jpg);
+}
+
+.img:hover {
+    transform: rotate3d(-1, -1, 0, 20deg);
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.menu li a:hover{
+    opacity: 1;
+}
+
+#page4{
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#page4 h1{
+    font-size: 120px;
+}
+
+#Events-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    height: 70%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+#card1 {
+    background-image: url(https://images.collegedunia.com/public/college_data/images/appImage/14479_NSIT_New.jpg?h=160&w=320&mode=stretch);
+}
+
+ #card2 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a5/IIT_Delhi_administrative_building.jpg);
+}
+
+#card3 {
+    background-image: url(https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/full_hd/public/article/images/MB-knowledge-tree.jpg?itok=WOQ3kseM);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #1e75c1;
+    padding: 30px;
+    padding-top: 100px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 18px;
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page5 h1{
+    font-size: 120px;
+}
+
+.contact-form {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 40px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+  
+.contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+  
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+  
+.contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+  
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+  
+.contact-form .input-box input[type="submit"]{
+    width: 100%;
+    background: #00bcd4;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #00bcd4;
+    transition: 0.5s;
+}
+  
+.contact-form .input-box input[type="submit"]:hover{
+    background: #FFF;
+    color: #00bcd4;
+}
+  
+@media (max-width: 991px){
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    
+    .row {
+      flex-direction: column;
+    }
+    
+    .contact-info {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    
+    .contact-form {
+      width: 100%;
+    }
+}
